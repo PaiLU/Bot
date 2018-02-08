@@ -1,0 +1,28 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "bot framework testing repository",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaiLU/Bot.git"
+  },
+  "keywords": [
+    "botframework",
+    "bot",
+    "chatbot"
+  ],
+  "author": "Lu Pai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaiLU/Bot/issues"
+  },
+  "homepage": "https://github.com/PaiLU/Bot#readme",
+  "dependencies": {
+    "botbuilder": "^3.14.0",
+    "restify": "^6.3.4"
+  }
+}
