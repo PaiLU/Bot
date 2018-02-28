@@ -9,7 +9,30 @@ This is a Bot Framework Testing Repository
 * [Events](#User-and-conversation-events)
 
 ## Dialogs
+### Prompt
+Prompting in a waterfall step
+    ``builder.Prompts.text(session, "");``
 
+    builder.Prompts.text
+    builder.Prompts.confirm
+    builder.Prompts.number
+    builder.Prompts.time
+        use ``builder.EntityReconizer.resolveTime([results.response])`` to resolve into Date object
+    builder.Prompts.choice 
+        have multiple choice format; have multiple listStyle
+    builder.Prompts.attachment
+
+Result in the next waterfall step
+    ``results.response`` or ``results.response.entity``
+Return the result back to previous dialog
+    Use ``session.endDialogWithResult(results)``
+### Manage conversation flow
+default, waterfall, multiple dialog, prompt, global action(triggerAction + onSelecctAction), contextual action(beginDialogAction), end (endConversationAction), replace, cancel
+
+```js
+var inMemoryStorage = new builder.MemoryBotStorage();
+var bot = new builder.UniversalBot(connector, [..waterfall steps..]).set('storage', inMemoryStorage); //Register in-memory storage
+```
 ## Messages
 Defalut handler
 send:   ``sesson.send()``// Can send message object
@@ -45,6 +68,13 @@ session.send(message);
 |toMessage()| Gets the JSON for the message.|
 |composePrompt(session:Session, prompts:string[], args?:any[])| Combines an array of prompts into a single localized prompt and then optionally fills the prompts template slots with the passed in arguments.|
 |randomPrompt(prompts:TextType)| Gets a random prompt from the array of *prompts* that is passed in|
+
+|addAttachment()| attachmentLayout()| attachments()
+|addEntity()| entities()
+|address()
+|compose()
+|inputHint()
+|localTimetamp()
 ## Channels
 ## State Data
 ## Recognize intent
