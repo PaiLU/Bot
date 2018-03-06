@@ -1,0 +1,67 @@
+{
+    "allLeaveType" : [
+        {
+            "name": "adoption leave"
+        },
+        {
+            "name": "advanced leave"
+        },
+        {
+            "name": "annual leave"
+        },
+        {
+            "name": "child medical leave"
+        },
+        {
+            "name": "childcare leave"
+        },
+        {
+            "name": "compassionate leave"
+        },
+        {
+            "name": "exam / study leave"
+        },
+        {
+            "name": "ext maternity"
+        },
+        {
+            "name": "extended childcare leave"
+        },
+        {
+            "name": "family care leave"
+        },
+        {
+            "name": "hospitalisation leave"
+        },
+        {
+            "name": "in camp training"
+        },
+        {
+            "name": "marriage leave"
+        },
+        {
+            "name": "maternity leave"
+        },
+        {
+            "name": "medical leave"
+        },
+        {
+            "name": "off in lieu"
+        },
+        {
+            "name": "paternity leave"
+        },
+        {
+            "name": "shared parental leave"
+        },
+        {
+            "name": "unpaid infant care leave"
+        },
+        {
+            "name": "unpaid leave"
+        },
+        {
+            "name": "volunteer leave"
+        }
+    ]
+}
