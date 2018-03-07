@@ -4,28 +4,38 @@ var fileName = 'sitLeaveBot.json'
 var data = JSON.parse(fs.readFileSync(modelFileName,'utf8'));
 var sitLeaveType = JSON.parse(fs.readFileSync('./allLeaveType.json'));
 var modelFeatures = JSON.parse(fs.readFileSync('./modelFeatures.json'));
+var otherUtterances = JSON.parse(fs.readFileSync('./utterances.json'));
 
-//import entities(leaveTypes)
-for (var i in sitLeaveType.allLeaveType){
-  var beforeEntityText = ["","take ","apply "];
-  data.entities.push(sitLeaveType.allLeaveType[i]);
-  var entityText = [];
-  entityText.push(sitLeaveType.allLeaveType[i].name);
-  for (var j in modelFeatures.model_features){
-    if (sitLeaveType.allLeaveType[i].name == modelFeatures.model_features[j].name){
-      var word = modelFeatures.model_features[j].words.split(",");
-      for (var k in word)
-        entityText.push(word[k]);
+//import applyLeave intent and entities(leaveTypes)
+  data.intents.push({"name": "applyLeave"});
+  for (var i in sitLeaveType.allLeaveType){ 
+    var beforeEntityText = ["","take ","apply "];
+    data.entities.push(sitLeaveType.allLeaveType[i]);
+    var entityText = [];
+    entityText.push(sitLeaveType.allLeaveType[i].name);
+    for (var j in modelFeatures.model_features){
+      if (sitLeaveType.allLeaveType[i].name == modelFeatures.model_features[j].name){
+        data.model_features.push(modelFeatures.model_features[j]);
+        var word = modelFeatures.model_features[j].words.split(",");
+        for (var k in word)
+          entityText.push(word[k]);
+      };
+    };
+    var afterEntityText = [""," from 2 jan to 3 feb"];
+    for (var l in beforeEntityText){
+      for (var m in entityText){
+        for (var n in afterEntityText)
+          data.utterances.push(makeUtterance("applyLeave",sitLeaveType.allLeaveType[i].name,beforeEntityText[l],entityText[m],afterEntityText[n]));
+      }
     };
   };
-  var afterEntityText = [""," from 2 jan to 3 feb"];
-  for (var l in beforeEntityText){
-    for (var m in entityText){
-      for (var n in afterEntityText)
-        data.utterances.push(makeUtterance("applyLeave",sitLeaveType.allLeaveType[i].name,beforeEntityText[l],entityText[m],afterEntityText[n]));
-    }
+// import other intents and utternces (reqStatus, help)
+  for (var otherIntent in otherUtterances){
+    data.intents.push({"name" : otherIntent});
+    for (var o in otherUtterances[otherIntent])
+      data.utterances.push(otherUtterances[otherIntent][o]);
   };
-};
+
 var jsonData = JSON.stringify(data);
 fs.writeFile(fileName, jsonData, function(err) {
     if(err) {
@@ -33,6 +43,7 @@ fs.writeFile(fileName, jsonData, function(err) {
     }
 });
 console.log("Done on generating "+fileName);
+
 function makeUtterance(intent,entity,beforeEntityText,entityText,afterEntityText){
   var a ={
     "text": beforeEntityText + entityText + afterEntityText,

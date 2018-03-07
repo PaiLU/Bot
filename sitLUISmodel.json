@@ -4,18 +4,13 @@
     "name": "sitLeaveBot",
     "desc": "This is designed for sit leave bot",
     "culture": "en-us",
-    "intents": [
-        {
-          "name": "applyLeave"
-        },
-        {
-          "name": "None"
-        }
-    ],
+    "intents": [],
     "entities": [],
     "composites": [],
     "closedLists": [],
-    "bing_entities": [],
+    "bing_entities": [
+      "datetimeV2"
+    ],
     "model_features": [],
     "regex_features": [],
     "utterances": []

@@ -1,0 +1,717 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "LeaveBot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "applyAdoptionLeave"
+    },
+    {
+      "name": "applyAnnualLeave"
+    },
+    {
+      "name": "applyChildcareLeave"
+    },
+    {
+      "name": "applyLeave"
+    },
+    {
+      "name": "applyMaternityLeave"
+    },
+    {
+      "name": "applySharedParentalLeave"
+    },
+    {
+      "name": "applySickLeave"
+    },
+    {
+      "name": "applyUnpaidInfantCareLeave"
+    },
+    {
+      "name": "help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "reqStatus"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetimeV2"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "absent on 3 mar",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "adoption leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "adoption leave for 10 days",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "adoption leave form 2 jan to 30 jan",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "adoption leave from 7 mar to 10 apr",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "adoption leave, 20 apr to 5 may",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "annual leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "annual leave from 13 dec to 17 dec",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "annual leave from 7 aug to 8 aug",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "annual leave, 2 may to 6 may",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "annualleave for 5 days",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "annualleave from 4 mar to 4 apr",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "apply adoption leave from 6 june to 7 july",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "apply child care leave from 2 feb to 5 mar",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "apply childcare leave from 2 feb to 5 mar",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "apply leave for 10 days",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "apply leave from 10 oct",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "apply leave from 2 feb to 5 mar",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "apply leave from 2 jul for 5 days",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "apply maternity leave from 2 feb to 5 mar",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "apply shared parental leave from 2 feb to 5 mar",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "apply sharedparental leave from 2 feb to 5 mar",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "apply sharedparental leave, form 2 jan to 30 jan",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "apply unpaid infant care leave from 2 feb to 5 mar",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "can i know about my leave balance",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "can you give me some help?",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "can you show me how many days my leave left ?",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "child care leave for 10 days",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "child care leave, form 2 jan to 30 jan",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "childcare leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "childcare leave for 15 days",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "childcare leave, form 2 jan to 30 jan",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "get my leave balance",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "get my outstanding leave status",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "help me check leave status",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "hi , i want to ask for 3 days ' adoption leave from 31 aug to 2 sep.",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "hi , i want to ask for 3 days ' child care leave from 12 nov to 15 nov",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "hi , i want to ask for 3 days ' childcare leave from 12 nov to 15 nov",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "hi , i want to ask for 3 days ' maternity leave from 31 aug to 2 sep.",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "hi , i want to ask for 3 days ' shared parental leave from 31 aug to 2 sep.",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "hi , i want to ask for 3 days ' sharedparental leave from 31 aug to 2 sep.",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "hi , i want to ask for 3 days ' unpaid infant care leave from 31 aug to 2 sep.",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply adoption leaves from 7 jun to 5 july",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply child care leave from 7 jun to 5 july",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply childcare leaves from 25 dec to 1 jan",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply leave from 7 jun to 5 july",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply maternity leave from 7 jun to 5 july",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply shared parental leave from 7 jun to 5 july",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply sharedparental leave from 7 jun to 5 july",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to apply unpaid infant care leave from 7 jun to 5 july",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "i want to check my leave status",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "leave balance",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "leave days",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "leave for 3 days",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "leave for 9 days",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "leave from 12 dec for 6 days",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "leave from 3 jan to 5 jan",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "leave from 7 sep to 9 sep",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "leave from tomorrow",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "main help",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "maternity leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "maternity leave 25 dec to 1 jan",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "maternity leave for 10 days",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "maternity leave from 8 aug to 9 aug",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "maternity leave, form 30 sep to 10 oct",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "mc for today",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "mc for yesterday",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "mc from 2 jan for 1 day",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "mc from 2 jan to 3 jan",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "mc from today for 2 days",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "medical leave from 30 apr to 3 may",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "medical leave from 31 may for 4 days",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "shared parental leave 25 dec to 1 jan",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "shared parental leave for 10 days",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "shared parental leave, form 2 jan to 30 jan",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "sharedparental leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sharedparental leave 12 nov to 15 nov",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "sharedparental leave for 10 days",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "sick leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sick leave for today",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "sick leave from 8 aug to 9 aug",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take 3 days' adoption leave",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "take 3 days' child care leave",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take 3 days' childcare leave",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take 3 days' maternity leave",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "take 3 days' shared parental leave",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "take 3 days' sharedparental leave",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "take a 2 days' maternity leave",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "take a 3 days' adoption leave",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "take a 3 days' child care leave",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take a 3 days' childcare leave",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take a 3 days' unpaid infant care leave",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "take adoption leave from 27 feb to 5 mar",
+      "intent": "applyAdoptionLeave",
+      "entities": []
+    },
+    {
+      "text": "take annual leave for 5 days",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "take annual leave from 11 nov for 5 days",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "take annual leave from 2 oct",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "take annual leave from 2 oct to 6 oct",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "take annualleave from 1 jan",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "take annualleave from 2 feb to 7 mar",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "take annualleave from 6 mar for 10 days",
+      "intent": "applyAnnualLeave",
+      "entities": []
+    },
+    {
+      "text": "take child care leave from 2 apr to 5 may",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take child care leave from 31 mar to 4 apr",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take childcare leave from 30 apr to 30 may",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take childcare leave from 30 sep to 10 oct",
+      "intent": "applyChildcareLeave",
+      "entities": []
+    },
+    {
+      "text": "take leave",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "take leave for 20 days",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "take leave from 2 apr to 5 may",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "take leave from 4 aug for 10 days",
+      "intent": "applyLeave",
+      "entities": []
+    },
+    {
+      "text": "take maternity leave from 31 jan to 4 feb",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "take maternity leave from 8 aug to 9 aug",
+      "intent": "applyMaternityLeave",
+      "entities": []
+    },
+    {
+      "text": "take mc for 4 days",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take mc from 2 jan to 5 jan",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take mc from 30 jan for 4 days",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take mc from 5 feb",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take me to the status",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "take medical leave fot 4 days",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take medical leave from 31 mar",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take medical leave from 4 mar to 5 mar",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take medical leave from today",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take shared parental leave from 30 may to 6 jun",
+      "intent": "applySharedParentalLeave",
+      "entities": []
+    },
+    {
+      "text": "take sick leave for today",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take sick leave from today for 23days",
+      "intent": "applySickLeave",
+      "entities": []
+    },
+    {
+      "text": "take unpaid infant care leave from 30 jun to 14 jul",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "take unpaid infant care leave from 7 jan to 6 jan",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "unpaid infant care leave 25 dec to 1 jan",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "unpaid infant care leave for 10 days",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "unpaid infant care leave, form 2 jan to 30 jan",
+      "intent": "applyUnpaidInfantCareLeave",
+      "entities": []
+    },
+    {
+      "text": "unpaidinfantcare leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "wha can you do?",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "what ' s my out standing leave",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "what ' s my outstanding leave",
+      "intent": "reqStatus",
+      "entities": []
+    },
+    {
+      "text": "what' s my outstanding leave",
+      "intent": "reqStatus",
+      "entities": []
+    }
+  ]
+}
