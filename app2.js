@@ -8,13 +8,13 @@ var otherUtterances = JSON.parse(fs.readFileSync('./utterances.json'));
 
 //import applyLeave intent and entities(leaveTypes)
   data.intents.push({"name": "applyLeave"});
-  for (var i in sitLeaveType.allLeaveType){ 
+  data.entities.push({"name": "leaveType"});
+  for (var i in sitLeaveType.leaveType){ 
     var beforeEntityText = ["","take ","apply "];
-    data.entities.push(sitLeaveType.allLeaveType[i]);
     var entityText = [];
-    entityText.push(sitLeaveType.allLeaveType[i].name);
+    entityText.push(sitLeaveType.leaveType[i].name);
     for (var j in modelFeatures.model_features){
-      if (sitLeaveType.allLeaveType[i].name == modelFeatures.model_features[j].name){
+      if (sitLeaveType.leaveType[i].name == modelFeatures.model_features[j].name){
         data.model_features.push(modelFeatures.model_features[j]);
         var word = modelFeatures.model_features[j].words.split(",");
         for (var k in word)
@@ -25,7 +25,7 @@ var otherUtterances = JSON.parse(fs.readFileSync('./utterances.json'));
     for (var l in beforeEntityText){
       for (var m in entityText){
         for (var n in afterEntityText)
-          data.utterances.push(makeUtterance("applyLeave",sitLeaveType.allLeaveType[i].name,beforeEntityText[l],entityText[m],afterEntityText[n]));
+          data.utterances.push(makeUtterance("applyLeave","leaveType",beforeEntityText[l],entityText[m],afterEntityText[n]));
       }
     };
   };
